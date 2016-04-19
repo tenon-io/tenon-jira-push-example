@@ -1,0 +1,16 @@
+{
+  "tenon": {
+    "tenonInstanceDomain": "https://tenon.io",
+    "apiKey": "",
+    "projectID": "YOUR PROJECT ID",
+  },
+  "jira": {
+    "host": "YOUR JIRA INSTANCE HOSTNAME WITH PORT",
+    "user": "YOUR JIRA USERNAME",
+    "password": "YOUR JIRA PASSWORD",
+    "projectKey": "YOUR JIRA PROJECT KEY",
+    "issueType": "Bug",
+    "issueSummaryPre": "Accessibility issues found at",
+    "issueDescriptionPre": "Tenon found accessibility issues:"
+  }
+}

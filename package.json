@@ -1,0 +1,29 @@
+{
+  "name": "tenon-jira-push-example",
+  "version": "0.0.1",
+  "title": "tenon-jira-push-example",
+  "description": "Example code for using Tenon.io and pushing ",
+  "keywords": "accessibility, api, tenon, jira, node",
+  "contributors": [{
+    "name": "Karl Groves",
+    "email": "karl@tenon.io",
+    "url": "http://www.tenon.io"
+  }],
+  "dependencies": {
+      "jira-api": "^0.2.2",
+      "unirest": "^0.4.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:karlgroves/tenon-jira-push-example.git"
+  },
+  "bugs": {
+    "url": "https://github.com/karlgroves/tenon-jira-push-example/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
+}
