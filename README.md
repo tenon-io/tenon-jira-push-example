@@ -64,8 +64,8 @@ The Jira section contains 7 options.
 * `user`: enter the username of the user who will be creating the issues. This is the username they use to log into your Jira instance.
 * `password`: enter the password of the user who will be creating the issues. Naturally this password should match the username.
 * `issueType`: enter the issue type here. We use `Bug` but you may have a special issue type for accessibility issues
-* `issueSummaryPre`:
-* `issueDescriptionPre`:
+* `issueSummaryPre`: This is the beginning part of the issue summary
+* `issueDescriptionPre`: This is the beginning part of the issue description. It will be followed by some issue data
 
 
 ## Install
