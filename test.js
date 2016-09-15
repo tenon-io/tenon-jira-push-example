@@ -7,7 +7,7 @@ var Request = unirest.post(config.tenon.tenonInstanceDomain + '/api/index.php')
     key: config.tenon.apiKey,
     projectID: config.tenon.projectID,
     url: 'http://www.google.com' // In the real world you're going to want to pass each url in some other way
-  }).end(function(response) {
+  }).end(function (response) {
 
     console.log('Status:');
     console.log(response.body.status);
@@ -51,7 +51,7 @@ var Request = unirest.post(config.tenon.tenonInstanceDomain + '/api/index.php')
         }
       };
 
-      jira.issue.post(options, function(response) {
+      jira.issue.post(options, function (response) {
         // in the real world you'll want to do something more interesting with the response.
         console.log(JSON.stringify(response, null, 4));
       });

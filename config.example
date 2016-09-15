@@ -2,7 +2,7 @@
   "tenon": {
     "tenonInstanceDomain": "https://tenon.io",
     "apiKey": "",
-    "projectID": "YOUR PROJECT ID",
+    "projectID": "YOUR PROJECT ID"
   },
   "jira": {
     "host": "YOUR JIRA INSTANCE HOSTNAME WITH PORT",
