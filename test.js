@@ -8,20 +8,20 @@ var Request = unirest.post(config.tenon.tenonInstanceDomain + '/api/index.php')
     projectID: config.tenon.projectID,
     url: 'http://www.google.com' // In the real world you're going to want to pass each url in some other way
   }).end(function (response) {
-
-    console.log('Status:');
-    console.log(response.body.status);
-
-    console.log('Response ID:');
-    console.log(response.body.request.responseID);
-
-    console.log('Total Issues: ');
-    console.log(response.body.resultSummary.issues.totalIssues);
-
-    console.log('Result URL:');
-    console.log(config.tenon.tenonInstanceDomain + '/history.php?responseID=' + response.body.request.responseID);
-
+    
     if (response.body.status === 200) {
+
+      console.log('Status:');
+      console.log(response.body.status);
+      
+      console.log('Response ID:');
+      console.log(response.body.request.responseID);
+
+      console.log('Total Issues: ');
+      console.log(response.body.resultSummary.issues.totalIssues);
+
+      console.log('Result URL:');
+      console.log(config.tenon.tenonInstanceDomain + '/history.php?responseID=' + response.body.request.responseID);
 
       var fullIssueDescription = config.jira.issueDescriptionPre + '\n' +
         'Density: ' + response.body.resultSummary.density.allDensity + '\n' +
@@ -52,9 +52,14 @@ var Request = unirest.post(config.tenon.tenonInstanceDomain + '/api/index.php')
       };
 
       jira.issue.post(options, function (response) {
+
         // in the real world you'll want to do something more interesting with the response.
         console.log(JSON.stringify(response, null, 4));
+
       });
     }
-
+    // Handle bad response from tenon
+    else {
+      console.log('Error From Tenon - Status:' + response.body.status + '  ' + response.body.message);
+    }
   });
