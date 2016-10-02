@@ -37,9 +37,7 @@ module.exports = function (grunt) {
       configFiles: {
         src: ['package.json']
       }
-    },
-
-
+    }
   });
 
   grunt.registerTask('default', ['jshint', 'jsonlint', 'travis-lint']);
