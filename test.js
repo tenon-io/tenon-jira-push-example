@@ -1,3 +1,5 @@
+'use strict';
+
 var unirest = require('unirest');
 var config = require('./config.json');
 var jira = require('jira-api');
@@ -33,9 +35,9 @@ var Request = unirest.post(config.tenon.tenonInstanceDomain + '/api/index.php')
 
       var options = {
         config: {
-          "username": config.jira.user,
-          "password": config.jira.password,
-          "host": config.jira.host
+          'username': config.jira.user,
+          'password': config.jira.password,
+          'host': config.jira.host
         },
         data: {
           fields: {
