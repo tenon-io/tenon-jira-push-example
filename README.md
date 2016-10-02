@@ -1,5 +1,7 @@
 # README
 
+![Travis CI build status](https://travis-ci.org/tenon-io/tenon-jira-push-example.svg?branch=master)
+
 This is example code only! Use it to see one example of how you could use Tenon to push to Jira.
 
 ## What this does
