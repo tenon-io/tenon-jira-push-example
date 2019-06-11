@@ -13,13 +13,14 @@
   ],
   "dependencies": {
     "jira-api": "^0.2.2",
-    "unirest": "^0.4.2"
+    "unirest": "^0.6.0"
   },
   "devDependencies": {
-    "grunt": "^1.0.1",
+    "grunt": "^1.0.4",
     "grunt-contrib-jshint": "^1.0.0",
     "grunt-jsonlint": "^1.1.0",
     "grunt-travis-lint": "0.0.3",
+    "husky": "^0.14.3",
     "jshint-stylish": "^2.2.1",
     "load-grunt-tasks": "^3.5.2",
     "time-grunt": "^1.4.0"
